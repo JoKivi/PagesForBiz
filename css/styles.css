@@ -1,0 +1,103 @@
+/* Yleinen */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.header .logo {
+height: auto;
+width: 60%;  
+}
+
+.navbar {
+  background-color: rgb(12, 12, 12);
+}
+
+
+/* Hero section */
+
+.hero {
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.596)), url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 25vh;
+
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+
+
+.hero-button {
+	box-shadow: 0px 0px 0px 2px #17ebeb;
+	background:linear-gradient(to bottom, #13edb6 5%, #136bd6 100%);
+	background-color:#13edb6;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#030303;
+	font-size:19px;
+	padding:12px 45px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.hero-button:hover {
+	background:linear-gradient(to bottom, #136bd6 5%, #13edb6 100%);
+	background-color:#136bd6;
+}
+.hero-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* Medium size display */
+@media screen and (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 8vw;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .hero-text h2 {
+    font-size: 5vw;
+    justify-content: center;
+  }
+  .hero-button {
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    text-align: center;
+  }
+}
+
+/* Main */

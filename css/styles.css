@@ -93,8 +93,8 @@ body {
   box-sizing: border-box;
   position: relative;
   width: 100vw;
-  height: 100vh;
-  padding-top: 15vh;
+  height: 70vh;
+  padding-top: 10vh;
 }
 
 .about .row {
@@ -120,13 +120,31 @@ body {
   justify-content: center;  
 }
 
-.about-text h3 {
-  now
+
+/* Large size */
+@media screen and (max-width: 991px) {
+  h1,
+  h2,
+  h3 {
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .about {
+    width: 100vw;
+    height: 80vh;
+    padding-top: 7vh;
+  }
+
+  .about .image {
+    flex-basis: 80%;
+    order: -1;
+    padding-bottom: 4%;
+  }
 }
 
-
-/* Medium size and smaller display */
-@media screen and (max-width: 768px) {
+/* Medium size and smaller */
+@media screen and (max-width: 767px) {
 
   h1,
   h2,
@@ -150,8 +168,19 @@ body {
     text-align: center;
   }
 
-  .about-text{
+  .about-text h3{
+    font-size: 4vw;
+  }
+
+  .about-text{    
+    font-size: 3vw;
     padding: 5px;
     text-align: center;
+  }
+
+  .about .image {
+    flex-basis: 80%;
+    order: -1;
+    margin-bottom: 4%;
   }
 }

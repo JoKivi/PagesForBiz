@@ -1,36 +1,51 @@
 /* Yleinen */
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 /* Navbar */
 .navbar {
   background-color: rgb(12, 12, 12);
 }
-
-.navbar-toggler-icon {
-  white-space: nowrap;
+.nav-item {
+  display: flex;
+  gap: 0.5rem;
 }
-
+a {
+  flex: 1;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #000000;
+}
 .header .logo {
   height: auto;
   width: 60%;
 }
-
-
 /* Hero section */
-
+.fade-zoom-in {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s, transform 1s;
+}
+.fade-zoom-in.animate {
+  opacity: 1;
+  transform: scale(1);
+}
 .hero {
   box-sizing: border-box;
   position: relative;
   width: 100vw;
   height: 100vh;
 }
-
 .hero::before {
   content: "";
   position: absolute;
@@ -43,7 +58,6 @@ body {
   background-size: cover;
   background-position: center center;
 }
-
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -52,17 +66,13 @@ body {
   justify-content: center;
   color: white;
   padding-top: 25vh;
-
 }
-
 .hero-text h1 {
   font-size: 56px;
   font-weight: 800;
 }
-
-
-
 .hero-button {
+  margin-top: 1rem;
   box-shadow: 0px 0px 0px 2px #17ebeb;
   background: linear-gradient(to bottom, #13edb6 5%, #136bd6 100%);
   background-color: #13edb6;
@@ -73,27 +83,17 @@ body {
   color: #030303;
   font-size: 19px;
   padding: 12px 45px;
-  text-decoration: none;
   text-shadow: 0px 1px 0px #283966;
 }
-
 .hero-button:hover {
   background: linear-gradient(to bottom, #136bd6 5%, #13edb6 100%);
   background-color: #136bd6;
 }
-
-.hero-button:active {
-  position: relative;
-  top: 1px;
-}
-
 .hero-links {
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin-top: 5vw;
+  justify-content: space-evenly;
+  margin-top: 5rem;
 }
-
 .hero-link {
   display: inline-block;
   margin: 1%;
@@ -104,29 +104,13 @@ body {
   border-radius: 10px;
   background-color: #000000;
   color: #ffff00;
-  text-decoration: none;
   text-align: center;
 }
-
 .hero-link:hover {
   background-color: #948606;
   color: #000000;
 }
-
-
 /* Main */
-
-.fade-zoom-in {
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 1s, transform 1s;
-}
-
-.fade-zoom-in.animate {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .about {
   box-sizing: border-box;
   position: relative;
@@ -134,22 +118,18 @@ body {
   height: 70vh;
   padding-top: 10vh;
 }
-
 .about .row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .about .image {
   flex-basis: 50%;
 }
-
 .about img {
   max-width: 100%;
   height: auto;
 }
-
 .about-text {
   display: flex;
   flex-direction: column;
@@ -157,74 +137,66 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .fade-in-text {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-
 /* Large size */
 @media screen and (max-width: 991px) {
-
   h1,
   h2,
   h3 {
     justify-content: center;
     white-space: nowrap;
   }
-
   .about {
     width: 100vw;
     height: 80vh;
     padding-top: 7vh;
   }
-
   .about .image {
     flex-basis: 80%;
     order: -1;
     padding-bottom: 4%;
   }
 }
-
 /* Medium size and smaller */
 @media screen and (max-width: 767px) {
-
   h1,
   h2,
   h3 {
     justify-content: center;
     white-space: nowrap;
   }
-
+  .hero-links{
+    font-size: 100%;
+  }
+  .hero-link {
+    padding: 2%;
+  }
   .hero-text h1 {
     font-size: 8vw;
   }
-
   h2 {
     font-size: 6vw;
   }
-
   h3 {
     font-size: 4vw;
   }
-
   .hero-button {
     width: 100%;
     max-width: 80%;
     height: auto;
     text-align: center;
   }
-
   .about-text h3 {
     font-size: 4vw;
   }
-
   .about-text {
     font-size: 3vw;
     padding: 0.5em;
     text-align: center;
   }
-
   .about .image {
     flex-basis: 80%;
     order: -1;

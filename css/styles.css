@@ -7,16 +7,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  background-color: rgb(12, 12, 12);
+}
 
-/* Header */
+.navbar-toggler-icon {
+  white-space: nowrap;
+}
 
 .header .logo {
   height: auto;
   width: 60%;
-}
-
-.navbar {
-  background-color: rgb(12, 12, 12);
 }
 
 
@@ -85,9 +87,45 @@ body {
   top: 1px;
 }
 
+.hero-links {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 5vw;
+}
+
+.hero-link {
+  display: inline-block;
+  margin: 1%;
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffff00;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffff00;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hero-link:hover {
+  background-color: #948606;
+  color: #000000;
+}
 
 
 /* Main */
+
+.fade-zoom-in {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s, transform 1s;
+}
+
+.fade-zoom-in.animate {
+  opacity: 1;
+  transform: scale(1);
+}
 
 .about {
   box-sizing: border-box;
@@ -117,12 +155,17 @@ body {
   flex-direction: column;
   position: relative;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
+.fade-in-text {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
 /* Large size */
 @media screen and (max-width: 991px) {
+
   h1,
   h2,
   h3 {
@@ -157,8 +200,12 @@ body {
     font-size: 8vw;
   }
 
-  .hero-text h2 {
-    font-size: 5vw;
+  h2 {
+    font-size: 6vw;
+  }
+
+  h3 {
+    font-size: 4vw;
   }
 
   .hero-button {
@@ -168,13 +215,13 @@ body {
     text-align: center;
   }
 
-  .about-text h3{
+  .about-text h3 {
     font-size: 4vw;
   }
 
-  .about-text{    
+  .about-text {
     font-size: 3vw;
-    padding: 5px;
+    padding: 0.5em;
     text-align: center;
   }
 

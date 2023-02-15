@@ -21,7 +21,7 @@ a {
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
-.nav-item a:hover {
+.navbar-nav a:hover {
   background-color: #fff;
   color: #000000;
 }

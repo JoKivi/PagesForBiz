@@ -157,7 +157,28 @@ a {
 	top:1px;
 }
 
-        
+/* Sticky buttons */
+.sticky {
+  position: fixed;
+  bottom: 30px;
+  background-color: #614caf;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#sticky-phone {
+  left: 5px;
+}
+
+#sticky-email {
+  left: 40px;
+}
+
+
+.fa {
+  font-size: 20px;
+}
 
 /* Large size media */
 @media screen and (max-width: 991px) {

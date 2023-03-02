@@ -30,15 +30,9 @@ a {
   width: 60%;
 }
 /* Hero section */
-.fade-zoom-in {
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 1s, transform 1s;
-}
-.fade-zoom-in.animate {
-  opacity: 1;
-  transform: scale(1);
-}
+
+
+
 .hero {
   box-sizing: border-box;
   position: relative;
@@ -109,12 +103,13 @@ a {
   background-color: #948606;
   color: #000000;
 }
-/* Main */
+
+/* About */
 .about {
   box-sizing: border-box;
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   padding-top: 10vh;
 }
 .about .row {
@@ -136,11 +131,35 @@ a {
   align-items: center;
   justify-content: center;
 }
-.fade-in-text {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+
+/* Gallery */
+#openGalleryButton {
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:4px solid #1532eb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:27px;
+	font-weight:bold;
+	padding:20px 76px;
+	text-decoration:none;
+	text-shadow:5px 4px 5px #263666;
 }
-/* Large size */
+#openGalleryButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+#openGalleryButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+/* Large size media */
 @media screen and (max-width: 991px) {
   h1,
   h2,
@@ -159,6 +178,7 @@ a {
     padding-bottom: 4%;
   }
 }
+
 /* Medium size and smaller */
 @media screen and (max-width: 767px) {
   h1,
@@ -249,5 +269,17 @@ a {
   border-radius: 5px;
   margin: 0 10px;
   cursor: pointer;
+}
+
+/* Fade zoom */
+.fade-zoom-in {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 1s, transform 1s;
+}
+
+.fade-zoom-in.animate {
+  opacity: 1;
+  transform: scale(1);
 }
 

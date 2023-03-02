@@ -1,0 +1,21 @@
+{
+    "galleryTitle": "Galleria",
+    "images": [
+      {
+        "title": "kuva 1",
+        "src": "img/kuva 1.jpg",
+        "description": "kuva 1"
+      },
+      {
+        "title": "kuva 2",
+        "src": "img/kuva 2.jpg",
+        "description": "kuva 2"
+      },
+      {
+        "title": "kuva 3",
+        "src": "img/kuva 3.jpg",
+        "description": "kuva 3"
+      }
+    ]
+  }
+  

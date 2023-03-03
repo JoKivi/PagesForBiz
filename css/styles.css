@@ -152,10 +152,6 @@ a {
 	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
 	background-color:#0688fa;
 }
-#openGalleryButton:active {
-	position:relative;
-	top:1px;
-}
 
 /* Sticky buttons */
 .sticky {
@@ -179,6 +175,24 @@ a {
 .fa {
   font-size: 20px;
 }
+
+.contact-info {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin: 20px;
+  background-color: #1b1bcf;
+  color: white;
+}
+
+#contact img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+}
+
+
 
 /* Large size media */
 @media screen and (max-width: 991px) {

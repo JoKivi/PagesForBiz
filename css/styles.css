@@ -108,7 +108,7 @@ a {
   position: relative;
   width: 100vw;
   height: auto;
-  padding: 10vh 3px 5vh 3px;
+  margin: 10vh 0px;
 }
 .about .row {
   display: flex;
@@ -131,7 +131,8 @@ a {
 }
 
 /* Services */
-.card-img-top {
+
+.card-img {
   width: 300px;
   height: 200px;
 }
@@ -139,6 +140,7 @@ a {
 
 /* Gallery */
 #openGalleryButton {
+  margin: 10vh 0px;
 	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
 	background-color:#2dabf9;
 	border-radius:3px;
@@ -149,7 +151,7 @@ a {
 	font-family:Arial;
 	font-size:27px;
 	font-weight:bold;
-	padding:20px 76px;
+	padding:10px 76px;
 	text-decoration:none;
 	text-shadow:5px 4px 5px #263666;
 }
@@ -181,6 +183,7 @@ a {
   font-size: 20px;
 }
 
+/* Contacts */
 .contact-info {
   border: 1px solid #000000;
   padding: 20px;
@@ -190,10 +193,11 @@ a {
 }
 
 #contact img {
-  float: left;
-  margin-right: 20px;
+  float: none;
+  margin: 0 auto;
+  display: block;
   border-radius: 50%;
-  width: 30%;
+  width: 50%;
   height: auto;
 }
 
@@ -206,18 +210,30 @@ a {
   h3 {
     justify-content: center;
     white-space: nowrap;
+    text-align: center;
   }
-  /* .about {
-    width: 100vw;
-    height: 80vh;
-    padding-top: 7vh;
-  } */
+
   .about .image {
     flex-basis: 80%;
     order: -1;
     padding-bottom: 4%;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .services .row,
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services .col-md-4 {
+    flex-basis: calc(50% - 2rem);
+    margin-bottom: 2rem;
+  }
+}
+
 
 /* Medium size and smaller */
 @media screen and (max-width: 767px) {

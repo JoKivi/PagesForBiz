@@ -1,32 +1,20 @@
-// Ladataan JSON tiedosto
-fetch("../gallery.json")
-    .then(response => response.json())
-    .then(data => {
+// Get the gallery container element
+const galleryContainer = document.getElementById("gallery-container");
 
-        // Luuppi images arraylle ja luodaan HTML elementti jokaiselle kuvalle
-        for (let i = 0; i < data.images.length; i++) {
-            const image = data.images[i];
+// Define the path to the folder containing the images
+const imagePath = "./gallery/";
 
-            const sourceElement = document.createElement("source");
-            sourceElement.srcset = image.srcset;
-            sourceElement.type = image.type;
+// Define an array to hold the image file names
+const imageNames = ["image1.jpg", "image2.jpg", "image3.jpg"];
 
-            const imgElement = document.createElement("img");
-            imgElement.src = image.src;
-            imgElement.alt = image.title;
+// Loop through the image file names and create an img element for each
+imageNames.forEach((imageName) => {
+  // Create the img element
+  const img = document.createElement("img");
 
-            const captionElement = document.createElement("p");
-            captionElement.innerText = image.description;
+  // Set the src attribute to the image path + image name
+  img.src = imagePath + imageName;
 
-            const pictureElement = document.createElement("picture");
-            pictureElement.appendChild(sourceElement);
-            pictureElement.appendChild(imgElement);
-            pictureElement.appendChild(captionElement);
-            document.querySelector(".images").appendChild(pictureElement);
-        }
-    })
-    .catch(error => {
-        console.error(error);
-    });
-
-
+  // Add the img element to the gallery container
+  galleryContainer.appendChild(img);
+});

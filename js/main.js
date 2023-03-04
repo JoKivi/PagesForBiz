@@ -59,19 +59,11 @@ function getCookie(name) {
 }
 
 
+const openGallery = () => {
+  window.open("gallery.html", "_blank");
+};
 
-// JSON gallery
-const openGalleryButton = document.getElementById('openGalleryButton');
+const openGalleryButton = document.getElementById("openGalleryButton");
+openGalleryButton.addEventListener("click", openGallery);
 
-// Luodaan uusi ikkuna
-openGalleryButton.addEventListener('click', function () {
-  const galleryWindow = window.open('', 'galleryWindow', 'width=800,height=600');
 
-  // Haetaan uudelle ikkunalle HTML
-  fetch('gallery.html')
-    .then(response => response.text()) // Muuttaa saadun tiedon tekstiksi
-    .then(html => { // "lupaus" nimeltä html
-      galleryWindow.document.write(html); // kutsuu muuttujan ja kirjoittaa uuteen ikkunaan html tekstin
-    })
-    .catch(error => console.error("Virhe haettaessa galleriaa",error)); // konsoliin ilmoitus virheestä
-});

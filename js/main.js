@@ -20,6 +20,9 @@ fadeZoomInElements.forEach((element) => {
 });
 
 // GDPR
+document.getElementById('gdpr-accept').addEventListener('click', acceptCookies);
+document.getElementById('gdpr-decline').addEventListener('click', declineCookies);
+
 function showGdprPopup() {
   var gdprPopup = document.getElementById('gdpr-popup');
   gdprPopup.style.display = 'block';
@@ -55,8 +58,7 @@ function getCookie(name) {
   return null;
 }
 
-document.getElementById('gdpr-accept').addEventListener('click', acceptCookies);
-document.getElementById('gdpr-decline').addEventListener('click', declineCookies);
+
 
 // JSON gallery
 const openGalleryButton = document.getElementById('openGalleryButton');

@@ -107,8 +107,8 @@ a {
   box-sizing: border-box;
   position: relative;
   width: 100vw;
-  height: 100vh;
-  padding-top: 10vh;
+  height: auto;
+  padding: 10vh 3px 5vh 3px;
 }
 .about .row {
   display: flex;
@@ -129,6 +129,13 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+/* Services */
+.card-img-top {
+  width: 300px;
+  height: 200px;
+}
+
 
 /* Gallery */
 #openGalleryButton {
@@ -200,11 +207,11 @@ a {
     justify-content: center;
     white-space: nowrap;
   }
-  .about {
+  /* .about {
     width: 100vw;
     height: 80vh;
     padding-top: 7vh;
-  }
+  } */
   .about .image {
     flex-basis: 80%;
     order: -1;
@@ -241,6 +248,8 @@ a {
     height: auto;
     text-align: center;
   }
+
+ 
   .about-text h3 {
     font-size: 4vw;
   }

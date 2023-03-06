@@ -1,20 +1,25 @@
-// Get the gallery container element
-const galleryContainer = document.getElementById("gallery-container");
+const galleryContainer = document.getElementById('gallery-container');
 
-// Define the path to the folder containing the images
-const imagePath = "./gallery/";
+const xhr = new XMLHttpRequest();
+xhr.open('GET', '../data/gallery.json');
+xhr.onload = () => {
+  if (xhr.status === 200) { //200 on hyväksytty vastaus
+    const data = JSON.parse(xhr.responseText);
 
-// Define an array to hold the image file names
-const imageNames = ["image1.jpg", "image2.jpg", "image3.jpg"];
-
-// Loop through the image file names and create an img element for each
-imageNames.forEach((imageName) => {
-  // Create the img element
-  const img = document.createElement("img");
-
-  // Set the src attribute to the image path + image name
-  img.src = imagePath + imageName;
-
-  // Add the img element to the gallery container
-  galleryContainer.appendChild(img);
-});
+    for (const image of data.images) {
+      const img = document.createElement('img');
+      img.src = 'gallery/' + image.filename;
+      img.alt = image.alt;
+      const caption = document.createElement('div');
+      caption.innerText = image.caption;
+      const container = document.createElement('div');
+      container.classList.add('image-container');
+      container.appendChild(img);
+      container.appendChild(caption);
+      galleryContainer.appendChild(container);
+    }
+  } else {
+    console.error(`Virhe ladattaessa JSON dataa: ${xhr.status}`);
+  }
+};
+xhr.send();

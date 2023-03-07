@@ -1,3 +1,3 @@
-$(function() {
-    $("footer").load("./footer.html");
-  });
+$(document).ready(function() {
+  $('footer').load('injectors/footer.html');
+});

@@ -64,7 +64,7 @@ function getCookie(name) {
 
 // Galleria
 const openGallery = () => {
-  window.open("gallery.html", "_blank");
+  window.open("pages\gallery.html", "_blank");
 };
 
 const openGalleryButton = document.getElementById("openGalleryButton");
@@ -118,7 +118,7 @@ thumbnailLinks.forEach(link => {
   link.addEventListener("click", event => {
     event.preventDefault();
     const pageId = link.dataset.id;
-    window.open(`${pageId}.html`,"_self");
+    window.open(`${pageId}.html`, "_self");
   });
 });
 

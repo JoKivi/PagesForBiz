@@ -1,7 +1,7 @@
 const galleryContainer = document.getElementById('gallery-container');
 
 const xhr = new XMLHttpRequest();
-xhr.open('GET', '../data/gallery.json');
+xhr.open('GET', 'data\gallery.json');
 xhr.onload = () => {
   if (xhr.status == 200) { //200 on hyväksytty vastaus
     const data = JSON.parse(xhr.responseText);

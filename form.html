@@ -9,27 +9,37 @@
   </head>
 <body>
 	
-<style>#message{padding-top:50px;padding-bottom:70px;background-color:#f8f8f8;border-top:1px solid #e5e5e5}#message h2{margin-bottom:30px}#message h2 span{border-bottom:5px solid #ed1d25}#message label{color:#666;margin-bottom:10px;font-size:1.2em}#message #form_email,#message #form_message,#message #form_name{box-sizing:border-box;border:1px solid #fff;box-shadow:none}#message #form_email,#message #form_name{padding:25px;border:1px solid #ccc;font-size:1.1em}#message #form_message{height:249px;padding:25px;border:1px solid #ccc;font-size:1.2em}#message #button_contacts{background:#666;padding:15px 0;width:100%;border:2px solid #666;color:#fff;cursor:pointer;font-size:1.3em;text-transform:uppercase;transition:background .6s,color .6s}#message #button_contacts:hover{background:0 0;color:#666}</style>  
+<style>
+  #message{padding-top:50px;padding-bottom:70px;background-color:#f8f8f8;border-top:1px solid #e5e5e5}
+  #message h2{margin-bottom:30px}
+  #message h2 span{border-bottom:5px solid #ed1d25}
+  #message label{color:#666;margin-bottom:10px;font-size:1.2em}
+  #message #form_email,#message #form_message,#message #form_name{box-sizing:border-box;border:1px solid #fff;box-shadow:none}
+  #message #form_email,#message #form_name{padding:25px;border:1px solid #ccc;font-size:1.1em}
+  #message #form_message{height:249px;padding:25px;border:1px solid #ccc;font-size:1.2em}
+  #message #button_contacts{background:#666;padding:15px 0;width:100%;border:2px solid #666;color:#fff;cursor:pointer;font-size:1.3em;text-transform:uppercase;transition:background .6s,color .6s}
+  #message #button_contacts:hover{background:0 0;color:#666}
+  </style>  
 
 <section id="message">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2><span>Ota yhteyttä</h2>
+        <h2>Ota yhteyttä</h2>
          <div id="contact-form">        
            <div class="controls">
              <div class="row">
                <div class="col-md-6">
                  <div class="form-group">
                    <label for="form_email">Sähköpostisi *</label>
-                    <input id="form_email" type="email" class="form-control" placeholder="Sähköposti*" required="" data-error="Kirjoita sähköpostisi!">
+                    <input id="point_e" id="form_email" type="email" class="form-control" placeholder="Sähköposti*" required="" data-error="Kirjoita sähköpostisi!">
                    <div class="help-block with-errors"></div>
                  </div>
                </div>
                <div class="col-md-6">
                  <div class="form-group">
                    <label for="form_name">Nimi *</label>
-                    <input id="form_name" type="text" class="form-control" required="" placeholder="Nimi">
+                    <input id="point_n" id="form_name" type="text" class="form-control" required="" placeholder="Nimi">
                    <div class="help-block with-errors"></div>
                  </div>
                </div>
@@ -46,7 +56,7 @@
              <div class="row">
                <div class="col-md-12">
                  <div class="form-group">
-                    <textarea id="form_message" name="text_comment" class="form-control" placeholder="Viesti" rows="4" required="" data-error="Kirjoita viestisi..."></textarea>
+                    <textarea  id="point_t" id="form_message" name="text_comment" class="form-control" placeholder="Viesti" rows="4" required="hello" data-error="Kirjoita viestisi..." ></textarea>
                    <div class="help-block with-errors"></div>
                  </div>
                  <div class="messages"></div>
@@ -85,6 +95,17 @@
                 });
             });
         });
+
+        var point_email = document.getElementById('point_e')
+        var point_name = document.getElementById('point_n')
+        var point_text = document.getElementById('point_t')
+        point_email.title = "kirjoita sähköposti"
+        point_email.style.height = "50px"
+        point_name.title = "kirjoita nimi"
+        point_name.style.height = "50px"
+        point_text.title = "kirjoita viesti"
+        point_text.style.height = "250px"
+        console.log(point_email, point_name, point_text);
    </script> 
 
 </body>

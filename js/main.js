@@ -115,10 +115,10 @@ openGalleryButton.addEventListener("click", openGallery);
 const thumbnailLinks = document.querySelectorAll('.d-flex');
 
 thumbnailLinks.forEach(link => {
-  link.addEventListener('click', event => {
+  link.addEventListener("click", event => {
     event.preventDefault();
     const pageId = link.dataset.id;
-    window.open(`${pageId}.html`);
+    window.open(`${pageId}.html`,"_self");
   });
 });
 

@@ -236,26 +236,24 @@ pre {
 
 
 /* GDPR */
-.gdpr-popup {
+.gdpr-container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.932);
-  color: azure;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.959);
+  display: none;
 }
-
-.gdpr-popup .content {
-  background-color: #fff;
-  padding: 20px;
+.gdpr-popup {
+  margin: 40vh auto;
   max-width: 500px;
+  min-width: min-content;
+  height: auto;
+  background-color: #bebebe;
+  border: 10px solid #bebebe;
+  color: black;
   text-align: center;
-  border-radius: 10px;
 }
 
 .gdpr-popup h2 {
@@ -266,21 +264,6 @@ pre {
 .gdpr-popup p {
   font-size: 16px;
   margin-bottom: 20px;
-}
-
-.gdpr-popup .actions {
-  display: flex;
-  justify-content: center;
-}
-
-.gdpr-popup .actions button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 0 10px;
-  cursor: pointer;
 }
 
 /* ANIMATIONS */

@@ -118,7 +118,7 @@ thumbnailLinks.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
     const pageId = link.dataset.id;
-    window.open(`${pageId}.html`, '_blank');
+    window.open(`${pageId}.html`);
   });
 });
 

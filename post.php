@@ -40,7 +40,7 @@
         // 
         $headers= "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n"; // viestin koodaus
-        $headers .= "From: Liventer Group Oy <no-reply@test.com>\r\n"; // keneltэ viesti
+        $headers .= "From: Liventer Group Oy <no-reply@liventer.com>\r\n"; // keneltä viesti
          
         // lähitetään viestiä
         mail($mail_to, $subject, $message, $headers);

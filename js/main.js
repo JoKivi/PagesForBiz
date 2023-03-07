@@ -71,3 +71,54 @@ const openGalleryButton = document.getElementById("openGalleryButton");
 openGalleryButton.addEventListener("click", openGallery);
 
 
+// //DJ-Karaoke
+// const openDJ = () => {
+//   window.open("dj.html", "_blank");
+// };
+
+// const openDjThumbnail = document.getElementById("dj");
+// openDjThumbnail.addEventListener("click", openDJ);
+
+// //Esitystekniikka
+// const openEsitys = () => {
+//   window.open("esitys.html", "_blank");
+// };
+
+// const openEsitysThumbnail = document.getElementById("esitys");
+// openEsitysThumbnail.addEventListener("click", openEsitys);
+
+// //Tapahtumatuotanto
+// const openTapahtuma = () => {
+//   window.open("tapahtuma.html", "_blank");
+// };
+
+// const openTapahtumaThumbnail = document.getElementById("tapahtuma");
+// openTapahtumaThumbnail.addEventListener("click", openTapahtuma);
+
+// //Erikoisohjelmat
+// const openErikois = () => {
+//   window.open("erikois.html", "_blank");
+// };
+
+// const openErikoisThumbnail = document.getElementById("erikois");
+// openErikoisThumbnail.addEventListener("click", openErikois);
+
+// //Haat
+// const openHaat = () => {
+//   window.open("haat.html", "_blank");
+// };
+
+// const openHaatThumbnail = document.getElementById("haat");
+// openHaatThumbnail.addEventListener("click", openHaat);
+
+
+const thumbnailLinks = document.querySelectorAll('.d-flex');
+
+thumbnailLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    const pageId = link.dataset.id;
+    window.open(`${pageId}.html`, '_blank');
+  });
+});
+

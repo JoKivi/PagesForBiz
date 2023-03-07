@@ -1,0 +1,20 @@
+{
+    "gallery": [
+      {
+        "filename": "../gallery/kuva1.jpg",
+        "caption": "Konfetilla täytetty juhla",
+        "alt": "juhlintaa"
+      },
+      {
+        "filename": "../gallery/kuva2.jpg",
+        "caption": "Pääsylippu bileisiin",
+        "alt": "lippu"
+      },
+      {
+        "filename": "../gallery/kuva3.jpg",
+        "caption": "Muki tyhjenee",
+        "alt": "drinkki"
+      }
+    ]
+  }
+  

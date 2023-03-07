@@ -23,29 +23,33 @@ fadeZoomInElements.forEach((element) => {
 document.getElementById('gdpr-accept').addEventListener('click', acceptCookies);
 document.getElementById('gdpr-decline').addEventListener('click', declineCookies);
 
+window.onload = function () {
+  var gdpr = getCookie('gdpr');
+  if (gdpr != 'decline' && gdpr != 'accept') {
+    showGdprPopup();
+  }
+}
+
 function showGdprPopup() {
-  var gdprPopup = document.getElementById('gdpr-popup');
+  var gdprPopup = document.getElementById('gdpr-container');
   gdprPopup.style.display = 'block';
+  document.body.style.overflow = 'hidden';
 }
 
 function acceptCookies() {
   document.cookie = "gdpr=accept; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  var gdprPopup = document.getElementById('gdpr-popup');
+  var gdprPopup = document.getElementById('gdpr-container');
   gdprPopup.style.display = 'none';
+  document.body.style.overflow = 'auto';
 }
 
 function declineCookies() {
   document.cookie = "gdpr=decline; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  var gdprPopup = document.getElementById('gdpr-popup');
+  var gdprPopup = document.getElementById('gdpr-container');
   gdprPopup.style.display = 'none';
+  document.body.style.overflow = 'auto';
 }
 
-window.onload = function () {
-  var gdpr = getCookie('gdpr');
-  if (gdpr != 'accept' && gdpr != 'decline') {
-    showGdprPopup();
-  }
-}
 
 function getCookie(name) {
   var cookieArr = document.cookie.split(";");
@@ -58,7 +62,7 @@ function getCookie(name) {
   return null;
 }
 
-
+// Galleria
 const openGallery = () => {
   window.open("gallery.html", "_blank");
 };

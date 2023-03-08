@@ -16,6 +16,25 @@
     border-radius: 5px;
   }
 
+  /* Footer */
+.footer {
+  margin-top: 5rem;
+  position: relative;
+  background-color: #272727;
+  color: #fff;
+  padding: 50px;
+}
+
+.footer p,
+pre {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+.footer-center {
+  text-align: center;
+}
+  
   @media screen and (max-width: 600px) {
     .gallery a {
       flex-basis: 33.33%;

@@ -1,4 +1,4 @@
-// Scroll fade in 
+// Scroll fade in
 function animateElementOnScroll(element, animationClass) {
   function checkIfInView() {
     const elementTop = element.getBoundingClientRect().top;
@@ -11,12 +11,11 @@ function animateElementOnScroll(element, animationClass) {
     }
   }
 
-  window.addEventListener('scroll', checkIfInView);
+  $(window).on('scroll', checkIfInView);
 }
 
-const fadeZoomInElements = document.querySelectorAll('.fade-zoom-in');
-fadeZoomInElements.forEach((element) => {
-  animateElementOnScroll(element, 'animate');
+$('.fade-zoom-in').each(function() {
+  animateElementOnScroll(this, 'animate');
 });
 
 // GDPR
@@ -64,7 +63,7 @@ function getCookie(name) {
 
 // Galleria
 const openGallery = () => {
-  window.open("pages\gallery.html", "_blank");
+  window.open("gallery.html", "_self");
 };
 
 const openGalleryButton = document.getElementById("openGalleryButton");
@@ -121,4 +120,33 @@ thumbnailLinks.forEach(link => {
     window.open(`${pageId}.html`, "_self");
   });
 });
+
+// Gallery
+const galleryContainer = document.getElementById('gallery-container');
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', '../data/gallery.json');
+xhr.onload = () => {
+  if (xhr.status == 200) { //200 on hyväksytty vastaus
+    const data = JSON.parse(xhr.responseText);
+    console.log(data.gallery);
+
+    for (const image of data.gallery) {
+      const img = document.createElement('img');
+      img.src = 'gallery/' + image.filename;
+      img.alt = image.alt;
+      const caption = document.createElement('div');
+      caption.innerText = image.caption;
+      const container = document.createElement('div');
+      container.classList.add('image-container');
+      container.appendChild(img);
+      container.appendChild(caption);
+      galleryContainer.appendChild(container);
+    }
+  } else {
+    console.error(`Virhe ladattaessa JSON dataa: ${xhr.status}`);
+  }
+};
+xhr.send();
+
 

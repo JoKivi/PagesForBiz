@@ -1,4 +1,4 @@
-// Scroll fade in
+// Animaatio
 function animateElementOnScroll(element, animationClass) {
   function checkIfInView() {
     const elementTop = element.getBoundingClientRect().top;
@@ -62,55 +62,15 @@ function getCookie(name) {
 }
 
 // Galleria
-const openGallery = () => {
+const galleryWindowOpener = () => {
   window.open("gallery.html", "_self");
 };
 
 const openGalleryButton = document.getElementById("openGalleryButton");
-openGalleryButton.addEventListener("click", openGallery);
+openGalleryButton.addEventListener("click", galleryWindowOpener);
 
 
-// //DJ-Karaoke
-// const openDJ = () => {
-//   window.open("dj.html", "_blank");
-// };
-
-// const openDjThumbnail = document.getElementById("dj");
-// openDjThumbnail.addEventListener("click", openDJ);
-
-// //Esitystekniikka
-// const openEsitys = () => {
-//   window.open("esitys.html", "_blank");
-// };
-
-// const openEsitysThumbnail = document.getElementById("esitys");
-// openEsitysThumbnail.addEventListener("click", openEsitys);
-
-// //Tapahtumatuotanto
-// const openTapahtuma = () => {
-//   window.open("tapahtuma.html", "_blank");
-// };
-
-// const openTapahtumaThumbnail = document.getElementById("tapahtuma");
-// openTapahtumaThumbnail.addEventListener("click", openTapahtuma);
-
-// //Erikoisohjelmat
-// const openErikois = () => {
-//   window.open("erikois.html", "_blank");
-// };
-
-// const openErikoisThumbnail = document.getElementById("erikois");
-// openErikoisThumbnail.addEventListener("click", openErikois);
-
-// //Haat
-// const openHaat = () => {
-//   window.open("haat.html", "_blank");
-// };
-
-// const openHaatThumbnail = document.getElementById("haat");
-// openHaatThumbnail.addEventListener("click", openHaat);
-
-
+// SERVICES
 const thumbnailLinks = document.querySelectorAll('.d-flex');
 
 thumbnailLinks.forEach(link => {
@@ -120,33 +80,3 @@ thumbnailLinks.forEach(link => {
     window.open(`${pageId}.html`, "_self");
   });
 });
-
-// Gallery
-const galleryContainer = document.getElementById('gallery-container');
-
-const xhr = new XMLHttpRequest();
-xhr.open('GET', '../data/gallery.json');
-xhr.onload = () => {
-  if (xhr.status == 200) { //200 on hyväksytty vastaus
-    const data = JSON.parse(xhr.responseText);
-    console.log(data.gallery);
-
-    for (const image of data.gallery) {
-      const img = document.createElement('img');
-      img.src = 'gallery/' + image.filename;
-      img.alt = image.alt;
-      const caption = document.createElement('div');
-      caption.innerText = image.caption;
-      const container = document.createElement('div');
-      container.classList.add('image-container');
-      container.appendChild(img);
-      container.appendChild(caption);
-      galleryContainer.appendChild(container);
-    }
-  } else {
-    console.error(`Virhe ladattaessa JSON dataa: ${xhr.status}`);
-  }
-};
-xhr.send();
-
-

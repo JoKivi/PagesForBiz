@@ -35,6 +35,7 @@ a {
   width: 60%;
 }
 
+
 /* Hero section */
 .hero {
   box-sizing: border-box;
@@ -89,30 +90,6 @@ a {
 .hero-button:hover {
   background: linear-gradient(to bottom, #136bd6 5%, #13edb6 100%);
   background-color: #136bd6;
-}
-
-.hero-links {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 5rem;
-}
-
-.hero-link {
-  display: inline-block;
-  margin: 1%;
-  padding: 10px 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ffff00;
-  border-radius: 10px;
-  background-color: #000000;
-  color: #ffff00;
-  text-align: center;
-}
-
-.hero-link:hover {
-  background-color: #948606;
-  color: #000000;
 }
 
 /* About */
@@ -237,22 +214,6 @@ a {
   font-size: 3vw;
   font-weight: 600;
 }
-
-/* Footer */
-.footer {
-  position: relative;
-  background-color: #272727;
-  color: #fff;
-  padding: 50px;
-}
-
-.footer p,
-pre {
-  color: white;
-  font-size: 14px;
-  margin: 0;
-}
-
 
 /* GDPR */
 .gdpr-container {

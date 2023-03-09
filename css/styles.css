@@ -6,9 +6,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 /* Hero section */
 .hero {
   box-sizing: border-box;
@@ -104,7 +101,6 @@ body {
   height: 200px;
 }
 
-
 /* Gallery */
 #openGalleryButton {
   margin: 10vh 0px;
@@ -161,6 +157,7 @@ body {
   font-size: small;
   background-color: #1532eb;
 }
+
 .contact-title {
   font-size: 3vw;
   font-weight: 600;
@@ -261,16 +258,17 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .contact-body {
     flex: 1 0 100%;
     width: 100%;
   }
+
   .contact-title {
     font-size: 3vw;
     font-weight: 600;
   }
-  
+
   .contact-textbox h3 {
     font-size: large;
   }
@@ -326,14 +324,17 @@ body {
   .contact-body {
     margin: 10px 0;
   }
+
   .contact-title {
     font-size: 4vw;
     font-weight: 600;
   }
+
   .contact-position {
     font-size: 4vw;
   }
-  .contact-textbox h3{
+
+  .contact-textbox h3 {
     font-size: 3vw;
   }
 }

@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4d2d2;
+  }
+.info-text{
+    float: right;
+    padding-left: 3rem;
+}
+
+h2{
+    margin-top: 10%;
+    font-weight: 600;
+}
+img {
+    float: left;
+    margin-top: 10vh;
+    max-width: 100%;
+    height: auto;
+}
+
+

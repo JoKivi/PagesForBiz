@@ -152,7 +152,7 @@ body {
 }
 
 /* Contacts */
-#contact-info {
+.contact .col-md-6 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;

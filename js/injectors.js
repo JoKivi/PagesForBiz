@@ -1,3 +1,7 @@
+// // assets
+// $(document).ready(function () {
+//   $(".assets").load("injectors/assets.html");
+// });
 //BOOTSTRAP
 $(document).ready(function () {
   $(".bootstrap").load("injectors/bootstrap.html");

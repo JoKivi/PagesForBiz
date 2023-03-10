@@ -1,25 +1,63 @@
+<!-- STICKY -->
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-    /* Sticky buttons */
     .sticky {
         position: fixed;
-        bottom: 30px;
-        background-color: #614caf;
-        color: white;
-        padding: 10px;
         cursor: pointer;
+        bottom: 20px;
     }
 
     #sticky-phone {
         left: 5px;
+
     }
 
     #sticky-email {
-        left: 40px;
+        left: 30px;
     }
 
-    .fa {
+    .contact-me {
         font-size: 20px;
+        border: 1px solid;
+        background-color: #614caf;
+        color: white;
+    }
+
+    .back-to-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        color: #fff;
+        background-color: #000000;
+        width: auto;
+        height: auto;
+        font-size: 10px;
+        text-align: center;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .back-to-top:hover {
+        opacity: 0.8;
+    }
+
+    @media screen and (max-width: 767px) {
+        .back-to-top {
+            bottom: 10px;
+            right: 10px;
+        }
+        .contact-me {
+        font-size: 10px;
+    }
     }
 </style>
-<a href="tel:+358405455417"><button class="sticky" id="sticky-phone"><i class="fa fa-phone"></i></button></a>
-<a href="mailto:samppa@liventer.fi"><button class="sticky" id="sticky-email"><i class="fa fa-envelope"></i></button></a>
+
+<a href="tel:+358405455417" class="contact-me"><i class="fa fa-phone"></i></button></a>
+<a href="mailto:samppa@liventer.fi" class="contact-me"><i class="fa fa-envelope"></i></button></a>
+<a href="#top" class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+</a>

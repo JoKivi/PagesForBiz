@@ -22,52 +22,46 @@
 
   <section id="message">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Ota yhteyttä</h2>
-          <div id="contact-form">
-            <div class="controls">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_email">Sähköpostisi *</label>
-                    <input id="point_e" type="email" class="form-control form_email" placeholder="Sähköposti*"
-                      required="" data-error="Kirjoita sähköpostisi!">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_name">Nimi *</label>
-                    <input id="point_n" type="text" class="form-control form_name" required="" placeholder="Nimi">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 checkbox-data">
-                  <label>
-                    <input type="checkbox" id="person_data" required="">
-                    <i class="fa fa-2x icon-checkbox"></i>
-                    <span>Hyväksyn, että tietoni tallennetaan ja niitä käytetään tietosuojaselosteen<a
-                        href="https://tietosuoja.fi" class="privacy-link" target="_blank">osoittamalla tavalla.</a></span>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea id="point_t" name="text_comment" class="form-control form_message"
-                      placeholder="Viesti" rows="4" required="hello" data-error="Kirjoita viestisi..."></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                  <div class="messages"></div>
-                </div>
-                <div class="col-md-12 text-center">
-                  <input type="submit" name="btn_submit" id="button_contacts" value="Lähetä viesti">
-                </div>
-              </div>
+      <div class="col-md-12" id="text-container">
+        <h2>Ota yhteyttä</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form_email">Sähköpostisi *</label>
+              <input id="point_e" type="email" class="form-control form_email" placeholder="Sähköposti*" required=""
+                data-error="Kirjoita sähköpostisi!">
+              <div class="help-block with-errors"></div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form_name">Nimi *</label>
+              <input id="point_n" type="text" class="form-control form_name" required="" placeholder="Nimi">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 checkbox-data">
+            <label>
+              <input type="checkbox" id="person_data" required="">
+              <i class="fa fa-2x icon-checkbox"></i>
+              <span id="tietosuoja">Hyväksyn, että tietoni tallennetaan ja niitä käytetään tietosuojaselosteen<a
+                  href="https://tietosuoja.fi" class="privacy-link" target="_blank">osoittamalla tavalla.</a></span>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <textarea id="point_t" name="text_comment" class="form-control form_message" placeholder="Viesti" rows="4"
+                required="" data-error="Kirjoita viestisi..."></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="messages"></div>
+          </div>
+          <div class="col-md-12 text-center">
+            <input type="submit" name="btn_submit" id="button_contacts" value="Lähetä viesti">
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #aaa4a4;
+  background-color: #000000;
 }
 
 .container {
@@ -11,6 +11,17 @@ body {
   margin-top: 50px;
 }
 
+h2 {
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+.checkbox-data {
+  font-size: medium;
+  margin: 1rem 0;
+  padding-right: 2rem;
+}
+
 #message {
   padding-top: 50px;
   padding-bottom: 70px;
@@ -18,51 +29,24 @@ body {
   border-top: 1px solid #e5e5e5
 }
 
-#message h2 {
-  margin-bottom: 30px
-}
-
-#message h2 span {
-  border-bottom: 5px solid #ed1d25
-}
-
 .privacy-link {  
   color: blue;
 }
 
-#message label {
-  color: #666;
-  margin-bottom: 10px;
-  font-size: 1.2em
-}
-
-#message .form_email,
-#message .form_message,
-#message .form_name {
+#point_t, #point_n, #point_e{
   box-sizing: border-box;
-  border: 1px solid #fff;
-  box-shadow: none
-}
-
-#message #form_email,
-#message #form_name {
-  padding: 25px;
-  border: 1px solid #ccc;
-  font-size: 1.1em
-}
-
-#message #form_message {
   height: 249px;
   padding: 25px;
-  border: 1px solid #ccc;
+  border: 1px solid #9ab1e4;
   font-size: 1.2em
 }
 
-#message #button_contacts {
-  background: #666;
+#button_contacts {
+  margin-top: 1rem;
+  background: #0051ffab;
   padding: 15px 0;
-  width: 100%;
-  border: 2px solid #666;
+  width: 60%;
+  border: 2px solid #27136d;
   color: #ffffff;
   cursor: pointer;
   font-size: 1.3em;
@@ -70,7 +54,18 @@ body {
   transition: background .6s, color .6s
 }
 
-#message #button_contacts:hover {
-  background: 0 0;
-  color: #666
+#button_contacts:hover {
+  background: white;
+  color: #0051ffab
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 4vh;
+    font-weight: 600;
+  }
+  .checkbox-data {
+    font-size: small;
+    padding-right: 1rem;
+  }
 }

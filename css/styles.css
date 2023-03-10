@@ -21,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.596)), url(../img/hero-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.596)), url(../img/hero-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

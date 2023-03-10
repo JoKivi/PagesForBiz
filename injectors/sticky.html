@@ -33,7 +33,7 @@
         background-color: #000000;
         width: auto;
         height: auto;
-        font-size: 10px;
+        font-size: 20px;
         text-align: center;
         transition: opacity 0.3s ease-in-out;
     }
@@ -42,18 +42,26 @@
         opacity: 0.8;
     }
 
+    @media screen and (min-width: 992px) {
+        #fa-phone {
+            display: none;
+        }
+    }
+
     @media screen and (max-width: 767px) {
         .back-to-top {
             bottom: 10px;
             right: 10px;
+            font-size: 10px;
         }
+
         .contact-me {
-        font-size: 10px;
-    }
+            font-size: 10px;
+        }
     }
 </style>
 
-<a href="tel:+358405455417" class="contact-me"><i class="fa fa-phone"></i></button></a>
+<a href="tel:+358405455417" class="contact-me" id="fa-phone"><i class="fa fa-phone"></i></button></a>
 <a href="mailto:samppa@liventer.fi" class="contact-me"><i class="fa fa-envelope"></i></button></a>
 <a href="#top" class="back-to-top">
     <i class="fa fa-arrow-up"></i>

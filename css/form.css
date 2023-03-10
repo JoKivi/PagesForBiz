@@ -36,9 +36,9 @@ body {
   font-size: 1.2em
 }
 
-#message #form_email,
-#message #form_message,
-#message #form_name {
+#message .form_email,
+#message .form_message,
+#message .form_name {
   box-sizing: border-box;
   border: 1px solid #fff;
   box-shadow: none

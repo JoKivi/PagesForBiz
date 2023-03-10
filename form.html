@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -31,7 +31,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="form_email">Sähköpostisi *</label>
-                    <input id="point_e" id="form_email" type="email" class="form-control" placeholder="Sähköposti*"
+                    <input id="point_e" type="email" class="form-control form_email" placeholder="Sähköposti*"
                       required="" data-error="Kirjoita sähköpostisi!">
                     <div class="help-block with-errors"></div>
                   </div>
@@ -39,7 +39,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="form_name">Nimi *</label>
-                    <input id="point_n" id="form_name" type="text" class="form-control" required="" placeholder="Nimi">
+                    <input id="point_n" type="text" class="form-control form_name" required="" placeholder="Nimi">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
@@ -57,7 +57,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea id="point_t" id="form_message" name="text_comment" class="form-control"
+                    <textarea id="point_t" name="text_comment" class="form-control form_message"
                       placeholder="Viesti" rows="4" required="hello" data-error="Kirjoita viestisi..."></textarea>
                     <div class="help-block with-errors"></div>
                   </div>
@@ -85,9 +85,9 @@
   <script>
     $(document).ready(function () {
       $('#button_contacts').click(function () {
-        var form_name = $('#form_name').val();
-        var form_email = $('#form_email').val();
-        var form_message = $('#form_message').val();
+        var form_name = $('.form_name').val();
+        var form_email = $('.form_email').val();
+        var form_message = $('.form_message').val();
         $.ajax({
           url: "post.php",
           type: "post",

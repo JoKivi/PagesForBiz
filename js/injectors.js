@@ -1,10 +1,6 @@
-// // assets
-// $(document).ready(function () {
-//   $(".assets").load("injectors/assets.html");
-// });
-//BOOTSTRAP
+// assets
 $(document).ready(function () {
-  $(".bootstrap").load("injectors/bootstrap.html");
+  $(".assets").load("injectors/assets.html");
 });
 
 // HEADER

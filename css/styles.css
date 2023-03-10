@@ -95,6 +95,9 @@ body {
 }
 
 /* Services */
+.services {
+  padding-top: 1.5rem;
+}
 
 .card-img {
   width: 300px;
@@ -102,19 +105,33 @@ body {
 }
 
 /* Gallery */
+.parallax {
+  background-image: url("../img/background-1.webp");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #openGalleryButton {
   margin: 10vh 0px;
   background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
   background-color: #2dabf9;
   border-radius: 3px;
   border: 4px solid #1532eb;
-  display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
   font-size: 27px;
   font-weight: bold;
-  padding: 10px 76px;
+  padding: 10px 10rem;
   text-decoration: none;
   text-shadow: 5px 4px 5px #263666;
 }
@@ -335,5 +352,11 @@ body {
 
   .contact-textbox h3 {
     font-size: 3vw;
+  }
+
+  #openGalleryButton {
+    align-items: center;
+    justify-content: center;
+    padding: 10px 3vw;
   }
 }

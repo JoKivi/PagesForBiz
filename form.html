@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,69 +7,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ota yhteyttä</title>
 
-    <!-- ASSETS -->
-    <div class="assets"></div>
+  <!-- ASSETS -->
+  <div class="assets"></div>
 
-  <!-- CSS -->
+  <!-- Form CSS -->
   <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
-
   <header></header>
+  <style>
 
-<section id="message">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Ota yhteyttä</h2>
-        <div id="contact-form">
-          <form class="needs-validation" novalidate>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="form_email">Sähköpostisi *</label>
-                <input id="point_e" id="form_email" type="email" class="form-control" placeholder="matti.meikalainen@malli.fi" required data-error="Kirjoita sähköpostisi!">
-                <div class="invalid-feedback">
-                  Kirjoita sähköpostisi!
+  </style>
+
+  <section id="message">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Ota yhteyttä</h2>
+          <div id="contact-form">
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_email">Sähköpostisi *</label>
+                    <input id="point_e" id="form_email" type="email" class="form-control" placeholder="Sähköposti*"
+                      required="" data-error="Kirjoita sähköpostisi!">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">Nimi *</label>
+                    <input id="point_n" id="form_name" type="text" class="form-control" required="" placeholder="Nimi">
+                    <div class="help-block with-errors"></div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <label for="form_name">Nimi *</label>
-                <input id="point_n" id="form_name" type="text" class="form-control" required placeholder="Matti Meikäläinen">
-                <div class="invalid-feedback">
-                  Kirjoita nimesi!
+              <div class="row">
+                <div class="col-md-12 checkbox-data">
+                  <label>
+                    <input type="checkbox" id="person_data" required="">
+                    <i class="fa fa-2x icon-checkbox"></i>
+                    <span>Hyväksyn, että tietoni tallennetaan ja niitä käytetään tietosuojaselosteen<a
+                        href="https://tietosuoja.fi" class="privacy-link" target="_blank">osoittamalla tavalla.</a></span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea id="point_t" id="form_message" name="text_comment" class="form-control"
+                      placeholder="Viesti" rows="4" required="hello" data-error="Kirjoita viestisi..."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="messages"></div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <input type="submit" name="btn_submit" id="button_contacts" value="Lähetä viesti">
                 </div>
               </div>
             </div>
-            <div class="form-check mb-3">
-              <input type="checkbox" class="form-check-input" id="person_data" required>
-              <label class="form-check-label" for="person_data">Hyväksyn, että tietoni tallennetaan ja niitä käytetään tietosuojaselosteen <a href="https://tietosuoja.fi" target="_blank">osoittamalla tavalla.</a></label>
-              <div class="invalid-feedback">
-                Hyväksy tietosuojaseloste!
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="form_message">Viesti *</label>
-              <textarea id="point_t" id="form_message" name="text_comment" class="form-control" placeholder="Kirjoita viestisi tähän..." rows="4" required data-error="Kirjoita viestisi..."></textarea>
-              <div class="invalid-feedback">
-                Kirjoita viestisi!
-              </div>
-            </div>
-            <div class="text-center">
-              <button class="btn btn-primary" type="submit">Lähetä viesti</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
+  <!-- Footer -->
   <footer></footer>
 
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- JavaScript -->
   <script src="js/injectors.js" defer></script>
+
   <script>
     $(document).ready(function () {
       $('#button_contacts').click(function () {
@@ -103,7 +115,6 @@
     point_text.style.height = "250px"
     console.log(point_email, point_name, point_text);
   </script>
-
 </body>
 
 </html>

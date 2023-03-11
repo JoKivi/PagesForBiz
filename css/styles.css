@@ -105,15 +105,6 @@ body {
 }
 
 /* Gallery */
-.parallax {
-  background-image: url("../img/background-1.webp");
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .gallery-button {
   display: flex;
   align-items: center;
@@ -238,6 +229,17 @@ body {
 }
 
 /* RESPONSIVENESS */
+@media screen and (min-width: 992px){
+  /* Gallery */
+.parallax {
+  background-image: url("../img/background-1.webp");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
 
 /* Large size media */
 @media screen and (max-width: 991px) {

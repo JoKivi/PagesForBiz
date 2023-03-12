@@ -11,12 +11,14 @@ xhr.onload = () => {
       const img = document.createElement('img');
       img.src = 'gallery/' + image.filename;
       img.alt = image.alt;
+
       const caption = document.createElement('div');
       caption.innerText = image.caption;
       const container = document.createElement('div');
       container.classList.add('image-container');
       container.appendChild(img);
-      container.appendChild(caption);
+      // container.appendChild(caption);
+
       galleryContainer.appendChild(container);
     }
   } else {

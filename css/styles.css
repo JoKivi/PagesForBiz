@@ -48,6 +48,7 @@ body {
 }
 
 .hero-button {
+  text-decoration: none;
   margin-top: 1rem;
   box-shadow: 0px 0px 0px 2px #17ebeb;
   background: linear-gradient(to bottom, #13edb6 5%, #136bd6 100%);

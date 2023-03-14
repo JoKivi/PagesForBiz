@@ -56,9 +56,6 @@
           <li class="nav-item">
             <a href="index.html#contact" class="nav-link">Yhteystiedot</a>
           </li>
-          <!-- <li class="na-item">
-            <a href="form.html" class="btn btn-primary" id="tilaa-button">Tilaa</a>
-          </li> -->
         </ul>
       </div>
       <div class="inline-button">

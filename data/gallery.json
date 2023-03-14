@@ -1,24 +1,278 @@
 {
     "gallery": [
       {
-        "filename": "../gallery/kuva1.jpg",
-        "caption": "Konfetilla täytetty juhla",
-        "alt": "juhlintaa"
+        "filename": "../gallery/kuva1.webp",
+        "caption": " ",
+        "alt": " "
       },
       {
-        "filename": "../gallery/kuva2.jpg",
-        "caption": "Pääsylippu bileisiin",
-        "alt": "lippu"
+        "filename": "../gallery/kuva2.webp",
+        "caption": " ",
+        "alt": " "
       },
       {
-        "filename": "../gallery/kuva3.jpg",
-        "caption": "Muki tyhjenee",
-        "alt": "drinkki"
+        "filename": "../gallery/kuva3.webp",
+        "caption": " ",
+        "alt": " "
       },
       {
-        "filename": "../gallery/kuva4.jpeg",
-        "caption": "haat",
-        "alt": "haat"
+        "filename": "../gallery/kuva4.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva5.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva6.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva7.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva8.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva9.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva10.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva11.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva12.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva13.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva14.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva15.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva16.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva17.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva18.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva19.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva20.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva21.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva22.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva23.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva24.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva25.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva26.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva27.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva28.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva29.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva30.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva31.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva32.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva33.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva34.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva35.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva36.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva37.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva38.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva39.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva40.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva41.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva42.webp",
+        "caption": " ",
+        "alt": " "
+      },      {
+        "filename": "../gallery/kuva43.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva44.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva45.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva46.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva47.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva48.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva49.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva50.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva51.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva52.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva53.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva54.webp",
+        "caption": " ",
+        "alt": " "
+      },
+      {
+        "filename": "../gallery/kuva55.webp",
+        "caption": " ",
+        "alt": " "
       }
     ]
   }

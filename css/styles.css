@@ -1,5 +1,9 @@
 /* Yleinen */
-html,
+html {
+  background-color: #000000;
+  height: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -93,6 +97,7 @@ body {
   position: relative;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 
 /* Services */
@@ -137,7 +142,7 @@ body {
 /* Contacts */
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -146,24 +151,28 @@ body {
   border: 2px solid #000000;
   margin: 10px;
   padding: 2%;
-  width: max-content;
+  max-width: 1200px;
   max-height: max-content;
-}
-
-.contact-body a {
-  color: #000000;
+  text-align: left; 
 }
 
 #contact img {
-  float: none;
-  margin: 1vh auto;
+  float: left;
   display: block;
-  width: 50%;
+  width: 15rem;
   height: auto;
+  border: 1px solid;
+  margin: 0 auto; 
+}
+
+.contact-info a {
+  text-decoration: underline;
+  color: #000000;
 }
 
 .contact-textbox {
-  padding: 4px;
+  margin-left: 17rem;
+  padding: 14px;
   width: auto;
   font-size: small;
 }
@@ -182,6 +191,7 @@ body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.87);
   display: none;
+  z-index: 6;
 }
 
 .gdpr-popup {
@@ -242,14 +252,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 }
 
 /* Large size media */
 @media screen and (max-width: 991px) {
 
-  h1,
-  h2,
-  h3 {
+  .hero h1,
+  .hero h2,
+  .hero h3 { 
     justify-content: center;
     white-space: nowrap;
     text-align: center;
@@ -259,6 +270,13 @@ body {
     flex-basis: 80%;
     order: -1;
     padding-bottom: 4%;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
   }
 }
 
@@ -274,39 +292,13 @@ body {
     flex-basis: calc(50% - 2rem);
     margin-bottom: 2rem;
   }
-
-  #contact-info {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .contact-body {
-    flex: 1 0 100%;
-    width: 100%;
-  }
-
-  .contact-title {
-    font-size: 3vw;
-    font-weight: 600;
-  }
-
-  .contact-textbox h3 {
-    font-size: large;
-  }
 }
 
 
 /* Medium size and smaller */
 @media screen and (max-width: 767px) {
-
-  h1,
-  h2,
-  h3 {
-    justify-content: center;
-    white-space: nowrap;
-  }
-
-  .hero-text h1 {
+  .hero-text h1, 
+  .contact-title {
     font-size: 8vw;
   }
 
@@ -341,27 +333,39 @@ body {
     order: -1;
     margin-bottom: 4%;
   }
+}
 
-  .contact-body {
-    margin: 10px 0;
-  }
-
-  .contact-title {
-    font-size: 4vw;
-    font-weight: 600;
-  }
-
-  .contact-position {
-    font-size: 4vw;
-  }
-
-  .contact-textbox h3 {
-    font-size: 3vw;
-  }
+  @media screen and (max-width: 768px) {
 
   #openGalleryButton {
     align-items: center;
     justify-content: center;
     padding: 10px 3vw;
+  }
+
+  .contact-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-body {
+    justify-content: center;
+    flex-direction: column;
+    max-width: fit-content;
+  }
+
+  #contact img {
+    float: none;
+    display: block;
+    width: 15rem;
+    height: auto;
+    border: 1px solid;
+    margin: 0 auto; 
+  }
+
+  .contact-textbox {
+    font-size: 4vh;
+    margin: auto;
   }
 }

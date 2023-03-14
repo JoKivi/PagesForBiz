@@ -4,7 +4,7 @@ setTimeout(function() {
 }, 500);
 
 // Animaatio
-function animateElementOnScroll(element, animationClass, delay) {
+function animateElementOnScroll(element, animationClass) {
   function checkIfInView() {
     const elementTop = element.getBoundingClientRect().top;
     const elementBottom = element.getBoundingClientRect().bottom;
@@ -66,13 +66,12 @@ function animateElementOnScroll(element, animationClass, delay) {
     return null;
   }
 
-  // Galleria
-  const galleryWindowOpener = () => {
-    window.open("gallery.html", "_self");
-  };
+  // // Galleria
+  // const galleryWindowOpener = () => {
+  //   window.open("gallery.html", "_self");
+  // };
 
-  const openGalleryButton = document.getElementById("openGalleryButton");
-  openGalleryButton.addEventListener("click", galleryWindowOpener);
+
 
 
   // SERVICES

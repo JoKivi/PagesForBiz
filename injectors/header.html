@@ -1,6 +1,9 @@
+<link href="./css/styles.css" rel="stylesheet">
+
 <style>
   /* Navbar */
 .navbar {
+  display: flex;
   background-color: rgb(12, 12, 12);
   padding: 1rem;
 }
@@ -10,10 +13,11 @@
   gap: 0.5rem;
 }
 
-a {
+.navbar a {
   flex: 1;
   color: #fff;
   padding: 0.5rem;
+  align-items: center;
   text-align: center;
   text-decoration: none;
   transition: all 0.5s ease-out;
@@ -24,17 +28,16 @@ a {
   color: #000000;
 }
 
-.header .logo {
+.navbar-brand img {
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 </style>
 
-<div class="header" id="header">
+<div class="header" id="top">
 
     <nav class="navbar navbar-expand-md navbar-dark container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="img/liventer_s.svg" alt="Liventer Group Logo"
-          class="logo"></a>
+      <a class="navbar-brand" href="index.html"><img src="img/liventer_s.svg" alt="Liventer Group Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtonContent"
         aria-controls="navbarButtonContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -62,7 +65,6 @@ a {
         <a href="form.html" class="btn btn-primary" id="tilaa-button">TILAA</a>
       </div>
     </nav>
-    <div class="clearfix"></div>
 
   </div>
 

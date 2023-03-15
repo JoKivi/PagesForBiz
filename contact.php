@@ -3,6 +3,8 @@ session_start();
 $title = 'Ota yhteyttä';
 require_once "./header.php";
 ?>
+
+
 <div style="max-width: 100vw; display: flex; justify-content: center;">
   <div style="margin: 2vw; width: 90vw; padding: 4vw; border-radius: 1vw; background-color: #F1EFEF;" class="container"
     style="display: flex; justify-content: center;">
@@ -25,11 +27,15 @@ require_once "./header.php";
       </div></br>
       <textarea type="text" name="message" placeholder="Viesti" class="form-control"
         style="min-height: 20vh"></textarea></br>
+
       <div class="container">
-        <input class="form-check-input" type="checkbox" name="rights" required>
-        <label style="margin-left: 1vw;" class="form-check-label">Hyväksyn, että tietoni tallennetaan ja niitä käytetään
-          tietosuojaselosteen <a href="https://tietosuoja.fi/etusivu">osoittamalla tavalla.</a></label></br></br>
-      </div>
+        <input style="border:1px solid blue; margin-left: 1vw" class="form-check-input" type="checkbox" name="rights" id="rights"
+          required>
+        <label style="margin-left: 1vw; display: inline-block;" class="form-check-label" for="rights">Hyväksyn, että
+          tietoni tallennetaan ja niitä käytetään tietosuojaselosteen <a
+            href="https://tietosuoja.fi/etusivu">osoittamalla tavalla.</a></label>
+      </div><br>
+
       <button style="font-size: 20px;" type="submit" class="btn btn-primary">Lähetä</button>
     </form>
   </div>

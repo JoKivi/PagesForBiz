@@ -19,6 +19,7 @@
 </style>
 
 <div class="sticky"></div>
+
 <footer class="mt-auto ">
   <div class="footer container-fluid">
     <div class="row">

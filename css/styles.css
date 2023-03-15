@@ -7,9 +7,13 @@ html {
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* Hero section */
 .hero {
@@ -48,7 +52,6 @@ body {
 }
 
 .hero-button {
-  text-decoration: none;
   margin-top: 1rem;
   box-shadow: 0px 0px 0px 2px #17ebeb;
   background: linear-gradient(to bottom, #13edb6 5%, #136bd6 100%);
@@ -57,11 +60,13 @@ body {
   border: 1px solid #4e6096;
   display: inline-block;
   cursor: pointer;
-  color: #030303;
+  color: #fff;
   font-size: 19px;
+  font-weight: 800;
   padding: 12px 45px;
   text-shadow: 0px 1px 0px #283966;
 }
+
 
 .hero-button:hover {
   background: linear-gradient(to bottom, #136bd6 5%, #13edb6 100%);
@@ -125,12 +130,11 @@ body {
   border-radius: 3px;
   border: 4px solid #1532eb;
   cursor: pointer;
-  color: #ffffff;
+  color: #fff;
   font-family: Arial;
   font-size: 27px;
   font-weight: bold;
   padding: 10px 10rem;
-  text-decoration: none;
   text-shadow: 5px 4px 5px #263666;
 }
 

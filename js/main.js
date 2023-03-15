@@ -66,14 +66,6 @@ function animateElementOnScroll(element, animationClass) {
     return null;
   }
 
-  // // Galleria
-  // const galleryWindowOpener = () => {
-  //   window.open("gallery.html", "_self");
-  // };
-
-
-
-
   // SERVICES
   const thumbnailLinks = document.querySelectorAll('.d-flex');
 

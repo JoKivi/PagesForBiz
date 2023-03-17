@@ -35,8 +35,7 @@ if (strlen($user_name) < 2) {
     $_SESSION['error_subject'] = 'Aihe on liian lyhyt...';
     redirect();
 } else {
-    $to = 'joni@liventer.fi';
-    $subject = $subject;
+    $to = 'samppa@liventer.fi';
     $headers = 'From: ' . $from . "\r\n" .
         'Reply-To: ' . $from . "\r\n" .
         'X-Mailer: PHP/' . phpversion();

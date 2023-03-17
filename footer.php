@@ -1,45 +1,50 @@
 <style>
-  html
-  .footer {
+  html .footer {
     margin-top: 5vh;
-    padding: 1vh 0;
+    padding: 1rem 0;
     position: relative;
     left: 0;
     bottom: 0;
     background-color: #000000;
     color: #fff;
+    list-style-type: none;
   }
 
   .footer p,
   pre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: 14px;
+    font-size: small;
   }
 
+  .copyright {
+    font-size: smaller;
+  }
 </style>
 
-<div class="sticky"></div>
-
-<footer class="mt-auto ">
+<footer class="mt-auto gx-0">
   <div class="footer container-fluid">
-    <div class="row">
-      <div class="col-md-6">
-        <pre>
-  <strong>Postiosoite:</strong> Saviontie 10 A 7
-               04260 KERAVA
+    <div class="row container">
 
- <strong>Käyntiosoite:</strong> Kuusiaidankuja 2
-               Halli 14
-               04260 KERAVA
-               Y-tunnus: 2905019-1
-              </pre>
+      <div class="col">
+        
+          <li><strong> Postiosoite:</strong></li>
+          <li>Saviontie 10 A 7</li>
+          <li>04260 KERAVA</li>
+        
+      </div>
+      <div class="col">
+        
+          <li><strong> Käyntiosoite:</strong></li>
+          <li>Kuusiaidankuja 2</li>
+          <li>Halli 14</li>
+          <li>04260 KERAVA</li>
+          <li>Y-tunnus: 2905019-1</li>
+        
       </div>
     </div>
-    <div class="row">
-      <div class="copyright text-center">
-        <pre>&copy; 2023 Liventer Group Oy
-Designed by <strong>Liventer Group Oy</strong></pre>
-      </div>
-
+  </div>
+  <div class="text-center">
+    <p><strong>&copy; 2023 Liventer Group Oy</strong></p>
+  </div>
 </footer>
-

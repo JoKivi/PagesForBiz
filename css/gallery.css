@@ -1,8 +1,10 @@
-  .gallery {
+  #gallery-container {
+    padding: 0;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    background-color: #d4d2d2;
   }
 
   #headline {

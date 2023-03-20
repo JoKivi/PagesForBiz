@@ -8,21 +8,21 @@ xhr.onload = () => {
     console.log(data.gallery);
 
     for (const image of data.gallery) {
+      const a = document.createElement('a');
+      a.href = 'gallery/' + image.filename;
+      a.setAttribute('data-lightbox', 'liventer');
+      
       const img = document.createElement('img');
       img.src = 'gallery/' + image.filename;
       img.alt = image.alt;
-      img.setAttribute('data-lightbox', 'mygallery');
-
-      // const caption = document.createElement('div');
-      // caption.innerText = image.caption;
 
       const container = document.createElement('div');
       container.classList.add('image-container');
 
-      container.appendChild(img);
-      // container.appendChild(caption);
+      a.appendChild(img);
+      container.appendChild(a);
 
-      galleryContainer.appendChild(container);
+      document.getElementById("gallery-container").appendChild(container);
 
       lightbox.option({
         'resizeDuration': 200,

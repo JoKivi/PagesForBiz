@@ -5,7 +5,7 @@ require_once "./header.php";
 ?>
 
 
-<div style="height:100%; max-width: 100vw; display: flex; justify-content: center;">
+<div style="min-height: 70vh; max-width: 100vw; display: flex; justify-content: center;">
   <div style="margin: 2vw; width: 90vw; padding: 4vw; border-radius: 1vw; background-color: #F1EFEF;" class="container"
     style="display: flex; justify-content: center;">
     <h1 class="text-secondary">Ota yhteyttä</h1></br>

@@ -1,13 +1,22 @@
 <style>
   html .footer {
     margin-top: 5vh;
-    padding: 1rem 0;
     position: relative;
     left: 0;
     bottom: 0;
     background-color: #000000;
     color: #fff;
     list-style-type: none;
+    font-size: 20px;
+  }
+
+  .col {    
+    padding: 1.5rem;
+    margin: 0 0 1.5rem 1.5rem;
+  }
+
+  .some {
+    font-size: 50px;
   }
 
   .footer p,
@@ -27,20 +36,31 @@
     <div class="row container">
 
       <div class="col">
-        
-          <li><strong> Postiosoite:</strong></li>
-          <li>Saviontie 10 A 7</li>
-          <li>04260 KERAVA</li>
-        
+
+        <li><strong> Postiosoite:</strong></li>
+        <li>Saviontie 10 A 7</li>
+        <li>04260 KERAVA</li>
+
       </div>
       <div class="col">
-        
-          <li><strong> Käyntiosoite:</strong></li>
-          <li>Kuusiaidankuja 2</li>
-          <li>Halli 14</li>
-          <li>04260 KERAVA</li>
-          <li>Y-tunnus: 2905019-1</li>
-        
+
+        <li><strong> Käyntiosoite:</strong></li>
+        <li>Kuusiaidankuja 2</li>
+        <li>Halli 14</li>
+        <li>04260 KERAVA</li>
+        <li>Y-tunnus: 2905019-1</li>
+
+      </div>
+    </div>
+
+    <div class="row container">
+
+      <div class="col">
+
+      </div>
+      <div class="some col">
+        <a href="https://www.facebook.com/LiventerGroup" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/liventergroup/" class="fa fa-instagram"></a>
       </div>
     </div>
   </div>

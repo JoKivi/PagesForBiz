@@ -11,15 +11,23 @@ xhr.onload = () => {
       const img = document.createElement('img');
       img.src = 'gallery/' + image.filename;
       img.alt = image.alt;
+      img.setAttribute('data-lightbox', 'mygallery');
 
-      const caption = document.createElement('div');
-      caption.innerText = image.caption;
+      // const caption = document.createElement('div');
+      // caption.innerText = image.caption;
+
       const container = document.createElement('div');
       container.classList.add('image-container');
+
       container.appendChild(img);
       // container.appendChild(caption);
 
       galleryContainer.appendChild(container);
+
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
     }
   } else {
     console.error(`Virhe ladattaessa JSON dataa: ${xhr.status}`);

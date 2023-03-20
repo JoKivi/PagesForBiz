@@ -1,7 +1,7 @@
 setTimeout(function() {
   const heroText = document.querySelector('.hero-text');
   heroText.removeAttribute('hidden');
-}, 500);
+}, 200);
 
 // Animaatio
 function animateElementOnScroll(element, animationClass) {

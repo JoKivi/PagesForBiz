@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /data/
+Disallow: /gallery/
+Disallow: /assets.html/
+Disallow: /footer.html/
+Disallow: /header.html/
+Disallow: /sticky.html/
